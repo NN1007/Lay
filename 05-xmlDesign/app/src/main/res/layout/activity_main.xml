@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/monitor"
+        android:text="@string/question"
+         />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:text="on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/a"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:text="at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:text="of"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:text="in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sure"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="取消"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:textSize="30sp" />
+
+</LinearLayout>
