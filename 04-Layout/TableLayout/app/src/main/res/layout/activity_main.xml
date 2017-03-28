@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="1">
+        <TextView
+            android:gravity="center"
+            android:text="表一"  />
+        <TableRow>
+            <TextView
+                android:background="@drawable/dot"
+                android:text="列0"   />
+            <TextView
+                android:background="@drawable/dot"
+                android:text="列1"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TextView
+            android:gravity="center"
+            android:text="表二"/>
+        <TableRow>
+            <TextView
+                android:text="列0不能伸展" />
+            <TextView
+                android:gravity="right"
+                android:text="列1可以伸展"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:text="表三"/>
+        <TableRow>
+            <TextView
+                android:background="@drawable/dot"
+                android:text="这一列很长，将会造成下一列无法显示或显示不全"/>
+            <TextView
+                android:background="@drawable/dot"
+                android:text="这一列被挤到了屏幕外"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0">
+        <TextView
+            android:gravity="center"
+            android:text="表四"/>
+        <TableRow>
+            <TextView
+                android:background="@drawable/dot"
+                android:text="由于设置成了可收缩，所以这一列不管有多长都不会把其他列挤到屏幕外"/>
+            <TextView
+                android:background="@drawable/dot"
+                android:text="这一列会被显示完全"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
