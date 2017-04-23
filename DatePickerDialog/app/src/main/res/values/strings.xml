@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DatePickerDialog</string>
+    <string name="setdate">修改日期</string>
+
+</resources>
