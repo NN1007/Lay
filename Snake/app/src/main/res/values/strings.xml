@@ -1,0 +1,8 @@
+<resources>
+    <string name="mode_ready"></string>
+    <string name="mode_pause"></string>
+    <string name="mode_lose_prefix"></string>
+    <string name="mode_lose_suffix"></string>
+    <string name="app_name">贪吃蛇</string>
+    <string name="snake_layout_text_text"></string>
+</resources>
